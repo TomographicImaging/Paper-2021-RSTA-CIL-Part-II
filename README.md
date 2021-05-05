@@ -1,5 +1,5 @@
-This code reproduces all the results presented in **Core Imaging Library part II: multichannel reconstruction
-for dynamic and spectral tomography**.
+This code reproduces all the results presented in **[Core Imaging Library part II: multichannel reconstruction
+for dynamic and spectral tomography**](https://doi.org/10.1098/rsta.2020.0193).
 
 ![](images.png)
 
@@ -61,4 +61,8 @@ conda env create -f environment.yml
     1. PDHG_SpatioSpectralTV
     1. ShowFigures
     <br></br>
+    
+# CITE
+    
+Papoutsellis E et al. 2021 Core imaging library part II: multichannel reconstruction for dynamic and spectral tomography. Phil. Trans. R. Soc. A 20200193.           https://doi.org/10.1098/rsta.2020.0193)
 
