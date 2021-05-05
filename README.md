@@ -1,7 +1,7 @@
 This code reproduces all the results presented in **Core Imaging Library part II: multichannel reconstruction
 for dynamic and spectral tomography**.
 
-![Test](images.png "Test")
+![](images.png)
 
 # Instructions
 
