@@ -10,7 +10,7 @@ for dynamic and spectral tomography**](https://doi.org/10.1098/rsta.2020.0193).
 **Note:** Depending on your nvidia-drivers, you can modify the `cudatoolkit` parameter. See [here](https://docs.nvidia.com/deploy/cuda-compatibility/index.html) for more information.
 
 ```bash
-conda create --name cil2_demos -c conda-forge -c astra-toolbox/label/dev -c ccpi cil cil-astra ccpi-regulariser nb_conda_kernels jupyterlab scikit-image cudatoolkit=_._
+conda create --name cil2_demos -c conda-forge -c astra-toolbox/label/dev -c ccpi cil cil-astra ccpi-regulariser nb_conda_kernels jupyterlab scikit-image python-wget cudatoolkit=_._
 ```      
 
 ## 2) **Activate the environment**
@@ -19,19 +19,13 @@ conda create --name cil2_demos -c conda-forge -c astra-toolbox/label/dev -c ccpi
 conda activate cil2_demos
 ```
 
-## 3) **Install wget (via pip)**
-
-**Note:** We use `wget` package to download all the real tomographic data directly from `Zenodo`.
-
-```bash
-pip install wget
-```
-
 # **Create the environment from the requirements.yml file:**
 
 ```bash
 conda env create -f environment.yml
 ```
+
+Then activate the environment: `conda activate cil2_demos` 
 
 ## There are 3 directories for 3 different case studies:
 
@@ -43,23 +37,23 @@ conda env create -f environment.yml
         
 - **CaseStudy_DynamicTomography (Section 4)** :   
 
-    1. LoadData_CreateSparseData
-    1. FBP_reconstructions
-    1. TikhonovReconstructions
-    1. TVReconstructions
-    1. dTVReconstructions
-    1. ShowFigure
+    1. 01_LoadData_CreateSparseData
+    1. 02_FBP_reconstructions
+    1. 03_TikhonovReconstructions
+    1. 04_TVReconstructions
+    1. 05_dTVReconstructions
+    1. 06_ShowFigures
     <br></br>
     
 - **CaseStudy_HyperspectralTomography (Section 5)** :
 
-    1. LoadRawDataAndCrop
-    1. PreProcessRingRemover
-    1. SIRT_reconstructions
-    1. SPDHG_SpatioSpectralTV
-    1. SPDHG_3D_spectral_TV
-    1. PDHG_SpatioSpectralTV
-    1. ShowFigures
+    1. 01_LoadRawDataAndCrop
+    1. 02_PreProcessRingRemover
+    1. 03_SIRT_reconstructions
+    1. 04_SPDHG_SpatioSpectralTV
+    1. 05_SPDHG_3D_spectral_TV
+    1. 06_PDHG_SpatioSpectralTV
+    1. 07_ShowFigures
     <br></br>
     
 # Reference
